@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
 import { createReducer, createAsyncReducer } from '../common/redux.helpers';
 import { keys as movieActionKeys } from './movie-browser.actions';
-
-//placeholder reducer for our movie modal
-const movieModalReducer = createReducer({ isOpen: false }, {});
+import movieModalReducer from './movie-modal/movie-modal.reducer';
 
 //this will create a new state with both the existing
 // movies and new pages of movies

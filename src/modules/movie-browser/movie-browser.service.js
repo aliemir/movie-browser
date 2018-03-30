@@ -1,4 +1,4 @@
-const MOVIE_DB_API_KEY = 'KEYHERE'; //'1cb7a3590fe5fa7325422676a047cc41';
+const MOVIE_DB_API_KEY = 'YOUR_API_HERE';
 const MOVIE_DB_BASE_URL = 'https://api.themoviedb.org/3';
 
 const createMovieDbUrl = (relativeUrl, queryParams) => {
