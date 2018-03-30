@@ -49,11 +49,24 @@ class MovieBrowser extends React.Component {
 
     return (
       <div>
-        <AppBar title="Movie Browser" />
+        <AppBar
+          title="Movie Browser"
+          style={{ position: 'fixed', top: 0 }}
+          iconElementRight={
+            <div>
+              <TextField
+                hintText="search box"
+                onChange={e => console.log(e.currentTarget.value)}
+              />
+            </div>
+          }
+        />
+        <Row>
+          <br />
+          <br />
+          <br />
+        </Row>
         <Grid>
-          <Row>
-            <p>Search will go here</p>
-          </Row>
           <Row>
             <MovieList movies={movies} isLoading={topMovies.isLoading} />
           </Row>
